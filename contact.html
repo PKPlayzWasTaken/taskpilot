@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - TaskPilot</title>
+    <meta name="description" content="Get in touch with TaskPilot. Contact us for support, sales inquiries, or schedule a demo.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">TaskPilot</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="features.html" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Have questions about TaskPilot? We're here to help you streamline your workflow and boost your team's productivity.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="sales">Sales & Pricing</option>
+                                <option value="demo">Schedule Demo</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button form-submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                    </form>
+                    
+                    <div class="form-success" id="form-success" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting TaskPilot. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Other Ways to Reach Us</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Support</h4>
+                            <p>support@taskpilot.com</p>
+                            <span class="contact-note">Response within 24 hours</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Support</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <span class="contact-note">Mon-Fri, 9 AM - 6 PM EST</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Office Location</h4>
+                            <p>123 Innovation Drive<br>San Francisco, CA 94105</p>
+                            <span class="contact-note">By appointment only</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Live Chat</h4>
+                            <p>Available on our website</p>
+                            <span class="contact-note">Mon-Fri, 9 AM - 6 PM EST</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about TaskPilot.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How quickly can we get started?</h4>
+                    <p>You can sign up and start using TaskPilot immediately. Our onboarding process takes less than 5 minutes, and you can import existing projects right away.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer a free trial?</h4>
+                    <p>Yes! We offer a 14-day free trial with access to all premium features. No credit card required to get started.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can TaskPilot integrate with our existing tools?</h4>
+                    <p>Absolutely. TaskPilot integrates with over 200 popular tools including Slack, GitHub, Google Workspace, and many more.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is my data secure?</h4>
+                    <p>Security is our top priority. We use enterprise-grade encryption, regular security audits, and comply with GDPR, SOC 2, and other industry standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>TaskPilot</h3>
+                        <p>Streamlining workflows for modern teams worldwide.</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TaskPilot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
